@@ -11,6 +11,7 @@
 		3301AA46279D2B3C00E1CE78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3301AA45279D2B3C00E1CE78 /* ViewController.swift */; };
 		3301AA48279D2B3E00E1CE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3301AA47279D2B3E00E1CE78 /* Assets.xcassets */; };
 		3301AA4B279D2B3E00E1CE78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3301AA49279D2B3E00E1CE78 /* Main.storyboard */; };
+		334E05D8279F51E9001A4D58 /* TextFile_IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E05D7279F51E9001A4D58 /* TextFile_IO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3301AA47279D2B3E00E1CE78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3301AA4A279D2B3E00E1CE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3301AA4C279D2B3E00E1CE78 /* File_IO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = File_IO.entitlements; sourceTree = "<group>"; };
+		334E05D7279F51E9001A4D58 /* TextFile_IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFile_IO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +54,12 @@
 		3301AA42279D2B3C00E1CE78 /* File IO */ = {
 			isa = PBXGroup;
 			children = (
+				3301AA49279D2B3E00E1CE78 /* Main.storyboard */,
 				3301AA43279D2B3C00E1CE78 /* AppDelegate.swift */,
 				3301AA45279D2B3C00E1CE78 /* ViewController.swift */,
-				3301AA47279D2B3E00E1CE78 /* Assets.xcassets */,
-				3301AA49279D2B3E00E1CE78 /* Main.storyboard */,
+				334E05D7279F51E9001A4D58 /* TextFile_IO.swift */,
 				3301AA4C279D2B3E00E1CE78 /* File_IO.entitlements */,
+				3301AA47279D2B3E00E1CE78 /* Assets.xcassets */,
 			);
 			path = "File IO";
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334E05D8279F51E9001A4D58 /* TextFile_IO.swift in Sources */,
 				3301AA46279D2B3C00E1CE78 /* ViewController.swift in Sources */,
 				3301AA44279D2B3C00E1CE78 /* AppDelegate.swift in Sources */,
 			);
