@@ -1,7 +1,6 @@
 import Cocoa
 
 class ViewController: NSViewController {
-    
     @IBOutlet weak var txt_Input: NSTextFieldCell!
     @IBOutlet weak var lbl_Output: NSTextFieldCell!
 
@@ -14,7 +13,7 @@ class ViewController: NSViewController {
     }
 
     // Set the contents
-    let fileContentToWrite = "Text to be recorded into file"
+    var fileContentToWrite = " "
     let fileName = "myFileName.txt"
     var filePath = ""
     
@@ -28,33 +27,28 @@ class ViewController: NSViewController {
         }
     }
       
-    @IBAction func Read(_ sender: Any) {
-        // Read file content. Example in Swift
+    @IBAction func Read(_ sender: Any) {  // Read file content. Example in Swift
         do {
             // Read file content
             let contentFromFile = try NSString(contentsOfFile: filePath, encoding: String.Encoding.utf8.rawValue)
             print(contentFromFile)
+            lbl_Output.stringValue = String(contentFromFile)
         }
         catch let error as NSError {
             print("An error took place: \(error)")
         }
     }
 
-    
-
     func setupFile(){//__________________________________________________
       if dirs.count > 0 {
           let dir = dirs[0] //documents directory
           filePath = dir.appending("/" + fileName)
-          print("Local path = \(filePath)")
+          //print("Local path = \(filePath)")
       } else {
           print("Could not find local directory to store file")
           return
       }
     }
-    
-    
-    
     
     override var representedObject: Any? {
         didSet {
