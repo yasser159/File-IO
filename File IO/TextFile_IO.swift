@@ -24,7 +24,7 @@ func saveTextFile(fileName_: String, text_:String){
     let filePath = getPath(fileName_: fileName_)
     
     do {
-        try text_.write(toFile: filePath, atomically: false, encoding: String.Encoding.utf8)
+        try text_.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
     }
     catch let error as NSError {
         print("An error while saving occured: \(error)")
@@ -44,5 +44,3 @@ func loadTextFile(fileName_: String)->String{
     }
     return text
 }
-
-
